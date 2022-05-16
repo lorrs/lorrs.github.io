@@ -1,0 +1,303 @@
+<!--Απαραίτητα στοιχεία κάθε html αρχείου -->
+<!-- αρχή -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf8">
+  <title> Page name </title>
+  <!-- τέλος -->
+
+</html>
+---------------------------------------------
+<!--NOTES: Τα κενά δεν έχουν συμασ΄ία, είναι μόνο για ομορφιά
+Τίποτα δεν είναι case sensitive
+Ta inline στοιχεία δεν αλλάζουν σειρά όταν χρησημοποιούνται
+Τα στοιχεία που αλλάζουν σειρά εμφανίζονται σε μορφή block
+Για να πλοηγηθώ σε γονικό φάκελο γράφω ../-->
+---------------------------------------------
+</head>
+
+<body>
+  <h1 id="top">Header 1</h1>
+  <H2>Header 2</H2>
+  <h3> is that as small as the main body? </h3>
+  <p>No actually, this is smaller probably because it doesnt have bold letters</p>
+  <p>Is that with the same font? <b>Yes, as it <i>seems </i></b></p>
+  <p>Υπάρχουν κάποιοι έτοιμοι κώδικες για τα έτοιμα σημβολα πχ για το ευρω: &euro;</p>
+  <footer>
+    <!-- Tο υποσέλιδο -->
+    <p> I can also use a footer</p>
+  </footer>
+  ----------------------------------------------
+  <!--Λίστες
+  <ol></ol> αριθμιμένη λίστα
+    <li></li> στοιχείο εντός λίστας
+  <ul></ul> Μη αριθμιμένη λίστα
+    <li></li> στοιχείο εντός λίστας
+  <dl></dl> Λίστα οριμών
+    <dt></dt> όρος
+    <dd></dd> περιγραφή όρου
+  -->
+  <ol type="a">
+    <!-- μικρά γράμματα -->
+  </ol>
+  <ol type="A">
+    <!-- Κεφαλαία-->
+  </ol>
+  <ol type="I">
+    <!-- Μικρά ρωμαικά-->
+  </ol>
+  <ol type="i">
+    <!-- Κεφαλαία ρωμαικά-->
+  </ol>
+  <ol type="1">
+    <!-- αριθμοί-->
+  </ol>
+  <ol start="3">
+    <!-- Η αρίθμηση ξεκινά απο την θέση που υποδυκνύεται-->
+  </ol>
+  <ol reversed>
+    <!-- Αντιστρέφει τη λίστα -->
+  </ol>
+  <ol>
+    <li value="-2"> Αθήνα </li> <!-- Συνεπώς η λ΄ίστα θα ξεκινάει απο το -2-->
+    <li> Θεσσαλονίκη </li>
+    <li> Πάτρα </li>
+    <li> Ηράκλειο </li>
+  </ol>
+  <ul>
+    <li> Αθήνα </li>
+    <li> Θεσσαλονίκη </li>
+    <li> Πάτρα </li>
+    <li> Ηράκλειο </li>
+  </ul>
+  <dl>
+    <dt>Τίγρης<dt>
+    <dd>Μια μεγάλη γάτα
+    <dd>
+    <dt>Θαλάσσιο λιοντάρι<dt>
+    <dd>Μια θαραλέα φώκια
+    <dd>
+  </dl>
+  -----------------------------------------------
+  <q cite="">Το άλογο μου! Το βασιλειο μου για ένα άλογο!</q>
+  <!--Το <q cite=""></q> είναι inline -->
+  <blockquote>Το άλογο μου! Το <em>βασιλειο μου </em> για ένα άλογο!</blockquote>
+  <!--To <blockquote> ειναι σαν το <<q cite=""></q> αλλά σε block.....Έχει ενα indent
+To <em></em> δίνει έμφαση δηλαδή κάνει πλαγια σαν το <i></i>-->
+  <p><strong>Περάστε έξω!!<strong></p>
+  <!--To <<strong></strong> κάνει bold σαν το <<b></b>-->
+  <!--Το bold και το italic σημασιολογικά δεν θέλουν να σου προκαλούν διαφορά στον
+τρόπο ανάνωσης ενώ το em και το strong θέλουν-->
+  <p>εκδόσεις <abbr title="Διεθνώς Αναγνωρισμένοι Ποιητές">ΔΑΠ, </p>
+  <!--<abbr title=""></abbr> είναι abbreviation-->
+  <address>Σοφοκλέους 35 Πανεπιστημίου Θεσσαλονίκη</address>
+  <!--Το <address class="" είναι σε μορφή block> -->
+--------------------------------------------------
+<!-- Οι χαρακτήρες διαφυγής έχουν ειδικό σκοπό και για αυτό ότνα θέλω να τους
+γράψω πρέπει να το κάνω με έναν ειδικό τρόπο:
+<     -> &lt;
+>     -> &gt;
+""    -> &quot;
+''    -> &apos;
+&     -> &amp;
+κενό  -> &nbsp;
+-->
+---------------------------------------------------
+<!--
+<header></header>             κεφαλίδα
+<nav></nav>                   μενού πλοήγησης
+<aside class=""></aside>      Πλευρικό μέρος
+<main></main>                 κύριο μέρος σελίδας
+<article class=""></article>  άρθρο (στέκει αυτόνομα)
+<<footer></footer>            υποσέλιδο
+-->
+--------------------------------------------------
+<!--Υπερσύνδεσμοι -->
+<ul>
+  <li>
+    <a href="index.html">this is a link</a>
+    <!--href= hypertext reference =>ορίζει τι θα ανοίξει-->
+  </li>
+  <li>
+    <a href="https://www.cnn.com">cnn</a> <!--εξωτερικός σύνδεσμος-->
+  </li>
+  <li>
+    <a href="hello.html">hello</a> <!--εσωτερικός σύνδεσμος-->
+  </li>
+  <!--Το στοιχείο target ορίζει που θα ανοίξει ο υπερσύνδεσμος. Αυτόματα οι
+  υπερσύνδεσμοι ανοίγουν στην ίδια καρτέλα. Με το στοιχείο _blank ο σύνδεσμος
+  ανοίγει σε νέα καρτέλα κάθε φορά, ενώ με το στοιχείο string ανοίγει σε μια
+  καρτέλα αλλά πάντα στην ίδια.
+  -->
+  <li>
+    <a href="https://www.cnn.com" target="_blank">cnn with _blank </a>
+  </li>
+  <li>
+    <a href="https://www.cnn.com" target="string">cnn with string </a>
+  </li>
+  <li>
+    <a href="hello.html" download>Κατέβασε το hello</a>
+  </li>
+  <li> <!--Κατέβασε μια εικόνα -->
+    <a href='Νέος φάκελος/camping.png' download>Download Camping Image</a>
+  </li>
+---------------------------------------------
+  <li> <!--Μπορώ να ανακατευθύνω τον χρήστη της σελίδας σε διαφορετικό
+    μέρος της σελίδας -->
+    <a href="#top">Go to top</a>
+  </li>
+  <li> <!-- ή σε διαφορετικό αρχείο html -->
+    <a href="hello.html#word">Go to hello.html file from here</a>
+  </li>
+-------------------------------------------
+  <!--Με το <img src="" alt=""> βάζουμε εικόνες. Το στοιχείο αυτό είναι inline
+  και 'void element' δηλαδή δεν έχει περιεχόμενο και δεν κλείνει.-->
+  <li><img src="image.jpg" alt="" width="" height=""> <!--Το src σημαίνει source
+  και υποδεικνύει την τοποθεσία μιας εικόνας. Το alt (altrenative text υπάρχει
+  για την περίπτωση που η εικόνα δεν θα ανοίξει κ.α.. To width κ height δεν
+  χρειάζονται.)-->
+  </li>
+  <li> <!--Μπορούμε να φτιάξουμε κ μια εικόνα με λεζάντα με το <figure>
+  </figure>-->
+    <figure>
+      <img src="images/happy chef.jpg" alt="happy chef cooking" width="400" >
+      <figcaption>Όλοι είμαστε χαρούμενοι στην εταιρία μας!!!!! <a href=https://www.istockphoto.com/photo/happy-chef-cooking-at-a-restaurant-gm1142243871-306346667>Source: istockphoto.com</a></figcaption>
+
+    </figure>
+  </li>
+-------------------------------------------
+  <li> <!--Βίντεο. src=source, autoplay=ξεκινάει να παίζει αυτόματα, controls
+  εμφανίζει κουμπιά αναπαραγωγής, loop=κανει loop, poster=thumdnail-->
+    <video src="videofile.ogg" autoplay poster="posterimage.jpg" controls loop preload poster>
+    </video>
+    <!--Αντιγραφή κώδικα απο YouTube-->
+    <iframe width="350" src="https://www.youtube.com/embed/uBTTCC-r91U?list=PLLMmbOLFy25ERZbdjsZJK2zC4X0bzR0LI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </li>
+-------------------------------------------
+  <li>
+    <audio src="" controls loop>
+      <p>Αποτυχία φόρτωσης βίντεο</p>
+    </audio>
+    <!--Αντιγραφή κώδικα απο spotify-->
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/777sxB7NFFxNkEkH243hoS?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  </li>
+</ul>
+-------------------------------------------
+<!--ΠΙΝΑΚΕΣ-->
+<table> <!-- Ορίζει ένα πίανκα-->
+  <tr>  <!-- Ορίζει μια γράμμη στον πίνακα-->
+    <td><img src="images/Olympiacos.png" width="50" height=""></td> <!-- Φτιάχνει ένα κελί στον πίνακα-->
+    <td>12</td>
+    <td>2</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td><img src="images/Panathinaikos.png"  width="50" height=""></td>
+    <td>6</td>
+    <td>9</td>
+    <td>3</td>
+    <td>12</td>
+  </tr>
+  <tr>
+    <td><img src="images/lavra.png"  width="50" height=""></td>
+    <td>65</td>
+    <td>39</td>
+    <td>125</td>
+    <td>142</td>
+  </tr>
+</table>
+<!--Πινακίδα με Headers-->
+<!--Για μορφοποίηση πίνακα χρησημοποιούμε CSS αλλά ενώ μπορούμε να διαλέξουμε
+γραμμή δεν μπορούμε να διαλέξουμε στήλη. Για αυτό έχουμε το <col /> που είναι
+self-closing και κάθε col αντιπρωπωπευει μια στήλη π΄ίνακα και το <colgroup>
+</colgroup> που περιτυλήσει τα <col>. -->
+<style>
+  .col-style {background-color: #FF99FF;}
+</style>
+<table>
+  <colgroup>
+    <col>
+    <col>
+    <col class="col-style">
+  </colgroup>
+  <caption>Πλήθος βραβείων ανα ταινία</caption><!--Λεζάντα πίνακα-->
+  <thead> <!--table header-->
+    <tr>
+      <th>Έτος</th><th>Ταινία</th><th>Βραβεία</th>
+    </tr>
+  </thead>
+  <tbody><!--γραμμές πίνκα-->
+    <tr>
+      <th>2020</th><td>Nomadland</td><td>4</td>
+    </tr>
+    <tr>
+      <th>2019</th><td>Parasite</td><td>4</td>
+    </tr>
+    <tr>
+      <th>2018</th><td>The Green Book</td><td>3</td>
+    </tr>
+    <tr>
+      <th>2017</th><td>The Shape of Water</td><td>4</td>
+    </tr>
+  </tbody>
+  <tfoot> <!--Γραμμές σύνοψης-->
+    <tr>
+      <th></th><th>Μ.Ο.</th><th>3.75</th>
+    </tr>
+  </tfoot>
+</table>
+<br />
+<br />
+<!--colspan = επεκτείνει ένα κελί σε n κελιά -->
+<table border='1'>
+  <thead>
+    <tr>
+      <td rowspan='2'></td>
+      <th colspan="5"> Καθημερινές </th>
+      <th colspan="2"> Σαββατοκύριακο</th>
+    </tr>
+    <tr>
+      <th>Δευτέρα</th><th>Τρίτη</th><th>Τετάρτη</th><th>Πέμπτη</th><th>Παρασκευή</th><th>Σάββατο</th><th>Κυριακή</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>6-7</th><td>CSS</td><td>html</td>CSS<td>-</td><td>-</td><td rowspan ='4' colspan="3">Nothing</td>
+    </tr>
+    <tr>
+      <th>7-8</th><td rowspan='2'>html</td><td>html</td><td>C</td>
+    </tr>
+    <tr>
+      <th>8-10</th><td>Python</td><td>+</td>
+    </tr>
+    <tr>
+      <th>10-12</th><td>javascript</td><td></td></td>
+      </td><td>+</td>
+    </tr>
+  </tbody>
+</table>
+------------------------------------------------
+<!-- ΦΟΡΜΕΣ
+Το action δέχεται τη σελίδα όπου τα δεδομένα θα σταλούν. Το πως θα σταλούν
+ορίζεται απο το GET defualt για απλα δεδομένα και το POST για ευαίσθητα δεδομένα.
+input type='submit' -> Αποστέλει
+input type='reset' -> Καθαρίζει
+input type='text' είναι για πλαίσιο κειμένου μιας γραμμής
+input name='' ορίζει το όνομα της μεταβλητής
+input value='' ορίζει μια αρχική μεταβλητής
+-->
+<form action="/send_data" method="GET">
+  Όνομα: <input type="text" name="firstname" minlength="2" maxlength="30"><br />
+  Επώνυμο: <input type="text" name="lastname" minlength="2" maxlength="30"><br>
+  <input type="submit" value="Αποστολή">
+  <input type="reset" value="Καθαρισμός">
+</form>
+
+
+
+</body>
+
+</html>
